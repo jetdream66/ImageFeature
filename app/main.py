@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Request
-from flask import Flask
+
 
 import numpy as np
 import cv2
@@ -16,7 +16,8 @@ def base642img(str_img):
   
 @app.get("/")
 def root():
-        return {"message": "This is my api"}
+        return {"message": "This is my api s"}
+
 
 @app.get("/api/hog")
 async def read_str(data : Request):
